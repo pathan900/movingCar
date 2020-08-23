@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .sky {
+            width: 150%;
+            height: 100vh;
+            background: url(landscape1.jpg);
+            position: relative;
+            background-size: cover;
+            background-repeat: repeat-x;
+            background-position: center;
+            animation: sky1 linear 20s infinite;
+        }
+
+        .cld1 img {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            top: 40px;
+            /* animation: cloud1 linear 10s infinite; */
+        }
+
+        .cld2 img {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            top: 150px;
+            left: 400px;
+            /* animation: cloud2 linear 10s infinite; */
+        }
+
+        .cld3 img {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            top: 60px;
+            left: 1000px;
+            /* animation: cloud3 linear 10s infinite; */
+        }
+
+        .track {
+            position: absolute;
+            width: 800%;
+            height: 200px;
+            bottom: 0;
+            background: url(track4.jfif);
+            animation: track linear 10s infinite;
+        }
+
+        .car img {
+            width: 333px;
+            height: 83px;
+            position: absolute;
+            left: 450px;
+            top: 490px;
+            /* animation: car linear 1s infinite; */
+            animation: car linear 15s infinite;
+        }
+
+        .wheel1 img {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 682px;
+            top: 530px;
+            animation: wheel linear .8s infinite;
+
+        }
+
+        .wheel2 img {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 472px;
+            top: 530px;
+            animation: wheel linear .8s infinite;
+        }
+
+        @keyframes wheel {
+            100% {
+                transform: rotate(360deg);
+                
+            }
+        }
+
+        @keyframes track {
+            100% {
+                transform: translateX(-500vh);
+            }
+        }
+
+        @keyframes cloud1 {
+            0% {
+                transform: translateX(550%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes cloud2 {
+            0% {
+                transform: translateX(450%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes cloud3 {
+            0% {
+                transform: translateX(450%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes sky1 {
+       
+            100% {
+                transform: translateX(-30%);
+            } 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sky">
+        <!-- <div class="cld1">
+            <img src="img/cld1.png" alt="">
+        </div>
+        <div class="cld2">
+            <img src="img/cld2.png" alt="">
+        </div>
+        <div class="cld3">
+            <img src="img/cld3.png" alt="">
+        </div> -->
+    </div>
+    <div class="track">
+
+    </div>
+    <div class="car">
+        <i><img src="car.png" alt=""></i>
+        <div class="wheel1">
+            <i><img src="wheel.png" alt=""></i>
+        </div>
+        <div class="wheel2">
+            <i><img src="wheel.png" alt=""></i>
+        </div>
+    </div>
+</body>
+
+</html>
